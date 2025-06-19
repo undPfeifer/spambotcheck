@@ -12,13 +12,23 @@
 
       const decoded = atob(encoded);
 
-      function createMail() {
+      function createMailEncoded() {
         const y = document.createElement("div");
         y.innerHTML = `<h1> ${decoded}<h1>`;
         document.body.appendChild(y);
       }
-      createMail();
+      
+      createMailEncoded();
 
+
+  
+      function createMail() {
+        const y = document.createElement("div");
+        y.innerHTML = `<h1> office@unkreatist.org<h1>`;
+        document.body.appendChild(y);
+      }
+createMail();
+      
       console.log(decoded);
     </script>
 
